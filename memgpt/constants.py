@@ -1,6 +1,8 @@
 import os
 from logging import CRITICAL, ERROR, WARN, WARNING, INFO, DEBUG, NOTSET
+from dotenv import load_dotenv
 
+load_dotenv()
 
 try:
     if os.environ["CUSTOM_MEMGPT_DIR"]:
